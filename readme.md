@@ -1,6 +1,6 @@
 ## __Comparação entre Robot Framework e Selenium com Python.__  
 
-### O objetivo é mostrar a diferença entre sintaxe e a utilização aplicada em determinados contextos.  O exemplo utilizado é o clássico preenchimento de fomrulário. 
+<p>O objetivo é mostrar a diferença entre sintaxe e a utilização aplicada em determinados contextos.  O exemplo utilizado é o clássico preenchimento de fomrulário.</p>
 
 <h2 style='text-align:center'>🚧 Em construção...  🚧</h2>   
 
