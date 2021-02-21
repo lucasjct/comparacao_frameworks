@@ -1,0 +1,10 @@
+{"level":30,"time":"2021-02-21T17:02:33.422Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Listening on 56537"}
+{"level":30,"time":"2021-02-21T17:02:33.989Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changed active context"}
+{"level":30,"time":"2021-02-21T17:02:34.083Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Video path: undefined"}
+{"level":30,"time":"2021-02-21T17:02:34.083Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changed active page"}
+{"level":30,"time":"2021-02-21T17:02:34.869Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changed active context"}
+{"level":30,"time":"2021-02-21T17:02:34.870Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changing current active page"}
+{"level":30,"time":"2021-02-21T17:02:34.870Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changed active page"}
+{"level":30,"time":"2021-02-21T17:02:34.890Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changed active context"}
+{"level":30,"time":"2021-02-21T17:02:34.890Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changing current active page"}
+{"level":30,"time":"2021-02-21T17:02:34.890Z","pid":19056,"hostname":"lucas-Aspire-A315-54","msg":"Changed active page"}
