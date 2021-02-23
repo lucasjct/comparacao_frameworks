@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulário Teste</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href='modalControler.js'>
 </head>
 <nav class="navbar" role="navigation" aria-label="main navigation" style='background-color:#48c78e'>
     <div class="navbar-brand">
@@ -89,7 +88,7 @@
                                     <div onclick="refs.modalEdicion.close()" class="modal-background"></div>
                                     <div class="modal-card">
                                         <header class="modal-card-head">
-                                            <p class="modal-card-title" id="title-modal" style="text-align: center;">Agradecemos a Confiança</p>
+                                            <p class="modal-card-title" id="title-modal">Agradecemos a Confiança</p>
                                             <button class="delete" aria-label="close"></button>
                                         </header>
                                         <section class="modal-card-body">
@@ -101,6 +100,18 @@
                                         </footer>
                                     </div>
                                 </div>
+                                <script>
+                                    var refs = {
+                                        modalEdicion: {
+                                            open: function() {
+                                                document.getElementById('modalEdicion').classList.add('is-active');
+                                            },
+                                            close: function() {
+                                                document.getElementById('modalEdicion').classList.remove('is-active');
+                                            }
+                                        }
+                                    };
+                                </script>
                                 <div class="control">
                                     <button class="button is-link is-light">Cancelar</button>
                                 </div>
