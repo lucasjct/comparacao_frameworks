@@ -4,12 +4,7 @@
 
 <h2 style='text-align:center'>🚧 Em construção...  🚧</h2>   
 
-
-
 ***    
-
 
 ![Badge](https://img.shields.io/badge/Selenium-Python-blue)
 ![Badge](https://img.shields.io/badge/RobotFramework-Browser-brightgreen)
-
-

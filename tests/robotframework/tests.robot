@@ -31,6 +31,7 @@ Preencher Campos
     #Fill Text           ${genero}           Masculino
     Click               ${select_pesquisa}
     CLick               ${select_option}
-    
+
 Submeter
     CLick               ${submit}
+    Sleep               2s
