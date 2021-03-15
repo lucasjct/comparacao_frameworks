@@ -28,7 +28,7 @@ Preencher Campos
     Fill Text           ${sobrenome}        ${dados.sobrenome}
     Fill Text           ${email}            ${dados.email}
     Fill Text           ${resumo}           ${dados.resumo}
-    #Fill Text           ${genero}           Masculino
+    #Fill Text          ${genero}           Masculino
     Click               ${select_pesquisa}
     CLick               ${select_option}
 

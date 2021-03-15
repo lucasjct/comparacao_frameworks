@@ -1,43 +1,46 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
-class PreencherFormulario():
 
-    def __init__(self, nome, sobrenome, email, text_area, genero):
+class Locators():
+    def __init__(self, driver):
+            
+        self.nome = (By.XPATH,'//*[@id="nome"]')
+        self.sobrenome = (By.ID, 'sobrenome')
+        self.email = (By.ID,'email')
+        self.genero = (By.ID,"selecionar-genero")
+        self.resumo = (By.CLASS_NAME,'textarea')
+        self.pesquisa = (By.ID,"inf-pesquisa")
+        self.selecionar_sim = (By.ID,"option-yes")
+        self.submeter = (By.ID,'submit')
+        driver.get("http://127.0.0.1:5000/")
+        
+class PreencherFormulario(Locators):
 
-        self.nome = nome
-        self.sobrenome = sobrenome
-        self.email = email
-        self.text_area = text_area
-        self.genero = genero
-
-    def setUp(self):
-
-        self.driver  = webdriver.Firefox()
-        self.driver.get("http://127.0.0.1:5000/")
-
-    def preencher_campos(self):
-
-        self.driver.find_element_by_xpath('//*[@id="nome"]').send_keys(self.nome)
-        self.driver.find_element_by_id('sobrenome').send_keys(self.sobrenome)
-        self.driver.find_element_by_id('email').send_keys(self.email)
-        Select(self.driver.find_element_by_id("selecionar-genero")).select_by_visible_text(self.genero)
-        self.driver.find_element_by_class_name('textarea').send_keys(self.text_area)
+    def preencher_campos(self, nome, sobrenome, email, genero, resumo):
+        
+        driver.find_element(*self.nome).send_keys(nome)
+        driver.find_element(*self.sobrenome).send_keys(sobrenome)
+        driver.find_element(*self.email).send_keys(email)
+        #Select(find_element(*self.genero).select_by_visible_text(genero))
+        driver.find_element(*self.resumo).send_keys(resumo)
 
     def marcar_campos_submeter(self):
 
-        self.driver.find_element_by_id("inf-pesquisa").click()
-        self.driver.find_element_by_id("option-yes").click()
-        self.driver.find_element_by_id("submit").click()
+        driver.find_element(*self.pesquisa).click()
+        driver.find_element(*self.selecionar_sim).click()
+        driver.find_element(*self.submeter).click()
 
     def encerrar_sessao(self):
-        self.driver.close()
+        driver.quit()
 
-formulario = PreencherFormulario('Lucas José', "Carvalho Teixeira", 
-                                'teste@gmail.com', 'Teste Selenium com Python','Masculino')
 
-formulario.setUp()
-formulario.preencher_campos()
+driver  = webdriver.Firefox()
+formulario = PreencherFormulario(driver)
+
+formulario.preencher_campos('Teste', 'Selenium', 'teste@selenium.com', 
+                            'selenium webdriver',"Testando aplicações com selenium")
 formulario.marcar_campos_submeter()
 formulario.encerrar_sessao()
