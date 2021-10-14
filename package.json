@@ -1,0 +1,30 @@
+{
+  "name": "comparacao_frameworks",
+  "version": "1.0.0",
+  "description": "teste com cypress",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasjct/comparacao_frameworks.git"
+  },
+  "keywords": [
+    "cypress",
+    "ci",
+    "docker"
+  ],
+  "author": "lucasjct",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasjct/comparacao_frameworks/issues"
+  },
+  "homepage": "https://github.com/lucasjct/comparacao_frameworks#readme",
+  "dependencies": {
+    "cypress": "^8.6.0"
+  }
+}
