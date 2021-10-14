@@ -3,7 +3,6 @@
 <p>O objetivo é mostrar a diferença entre sintaxe e a utilização aplicada em determinados contextos.  O exemplo utilizado é o clássico preenchimento de fomrulário.</p>
 
 
-***    
 
 ![Badge](https://img.shields.io/badge/Selenium-Python-blue)
 ![Badge](https://img.shields.io/badge/RobotFramework-Browser-brightgreen)    
