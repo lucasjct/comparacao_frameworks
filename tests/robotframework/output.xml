@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.10 on linux)" generated="20211014 19:16:01.459" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.10 on linux)" generated="20211014 20:10:41.117" rpa="false">
 <suite id="s1" name="Tests" source="/home/lucajct/workspace/comparacao_frameworks/tests/robotframework/tests.robot">
 <test id="s1-t1" name="Cenário - Preencher Formulário">
 <kw name="Acessar Formulario">
@@ -12,11 +12,11 @@
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
 <arguments>
 <arg>chromium</arg>
-<arg>headless=False</arg>
+<arg>headless=True</arg>
 </arguments>
-<msg timestamp="20211014 19:16:09.130" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
-<msg timestamp="20211014 19:16:11.402" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
-<status status="PASS" starttime="20211014 19:16:09.127" endtime="20211014 19:16:11.406"></status>
+<msg timestamp="20211014 20:10:48.761" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
+<msg timestamp="20211014 20:10:49.627" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
+<status status="PASS" starttime="20211014 20:10:48.758" endtime="20211014 20:10:49.630"></status>
 </kw>
 <kw name="New Page" library="Browser">
 <tags>
@@ -29,10 +29,10 @@ Returns a stable identifier for the created page.</doc>
 <arguments>
 <arg>http://127.0.0.1:5000/</arg>
 </arguments>
-<msg timestamp="20211014 19:16:16.499" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5000/</msg>
-<status status="PASS" starttime="20211014 19:16:11.408" endtime="20211014 19:16:16.501"></status>
+<msg timestamp="20211014 20:10:52.939" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5000/</msg>
+<status status="PASS" starttime="20211014 20:10:49.631" endtime="20211014 20:10:52.941"></status>
 </kw>
-<status status="PASS" starttime="20211014 19:16:09.124" endtime="20211014 19:16:16.503"></status>
+<status status="PASS" starttime="20211014 20:10:48.755" endtime="20211014 20:10:52.942"></status>
 </kw>
 <kw name="Preencher Campos">
 <kw name="Fill Text" library="Browser">
@@ -45,8 +45,8 @@ Returns a stable identifier for the created page.</doc>
 <arg>${nome}</arg>
 <arg>${dados.nome}</arg>
 </arguments>
-<msg timestamp="20211014 19:16:16.511" level="INFO">Fills the text 'Lucas' in the given field.</msg>
-<status status="PASS" starttime="20211014 19:16:16.507" endtime="20211014 19:16:16.834"></status>
+<msg timestamp="20211014 20:10:52.951" level="INFO">Fills the text 'Lucas' in the given field.</msg>
+<status status="PASS" starttime="20211014 20:10:52.946" endtime="20211014 20:10:53.236"></status>
 </kw>
 <kw name="Fill Text" library="Browser">
 <tags>
@@ -58,8 +58,8 @@ Returns a stable identifier for the created page.</doc>
 <arg>${sobrenome}</arg>
 <arg>${dados.sobrenome}</arg>
 </arguments>
-<msg timestamp="20211014 19:16:16.838" level="INFO">Fills the text 'Texeira' in the given field.</msg>
-<status status="PASS" starttime="20211014 19:16:16.835" endtime="20211014 19:16:16.991"></status>
+<msg timestamp="20211014 20:10:53.239" level="INFO">Fills the text 'Texeira' in the given field.</msg>
+<status status="PASS" starttime="20211014 20:10:53.237" endtime="20211014 20:10:53.378"></status>
 </kw>
 <kw name="Fill Text" library="Browser">
 <tags>
@@ -71,8 +71,8 @@ Returns a stable identifier for the created page.</doc>
 <arg>${email}</arg>
 <arg>${dados.email}</arg>
 </arguments>
-<msg timestamp="20211014 19:16:16.995" level="INFO">Fills the text 'teste@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20211014 19:16:16.992" endtime="20211014 19:16:17.143"></status>
+<msg timestamp="20211014 20:10:53.382" level="INFO">Fills the text 'teste@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20211014 20:10:53.379" endtime="20211014 20:10:53.506"></status>
 </kw>
 <kw name="Fill Text" library="Browser">
 <tags>
@@ -84,8 +84,8 @@ Returns a stable identifier for the created page.</doc>
 <arg>${resumo}</arg>
 <arg>${dados.resumo}</arg>
 </arguments>
-<msg timestamp="20211014 19:16:17.147" level="INFO">Fills the text 'Automacao com RobotFramework' in the given field.</msg>
-<status status="PASS" starttime="20211014 19:16:17.144" endtime="20211014 19:16:17.277"></status>
+<msg timestamp="20211014 20:10:53.510" level="INFO">Fills the text 'Automacao com RobotFramework' in the given field.</msg>
+<status status="PASS" starttime="20211014 20:10:53.507" endtime="20211014 20:10:53.634"></status>
 </kw>
 <kw name="Click" library="Browser">
 <tags>
@@ -96,7 +96,7 @@ Returns a stable identifier for the created page.</doc>
 <arguments>
 <arg>${select_pesquisa}</arg>
 </arguments>
-<status status="PASS" starttime="20211014 19:16:17.278" endtime="20211014 19:16:17.475"></status>
+<status status="PASS" starttime="20211014 20:10:53.635" endtime="20211014 20:10:53.827"></status>
 </kw>
 <kw name="Click" library="Browser">
 <tags>
@@ -107,9 +107,9 @@ Returns a stable identifier for the created page.</doc>
 <arguments>
 <arg>${select_option}</arg>
 </arguments>
-<status status="PASS" starttime="20211014 19:16:17.476" endtime="20211014 19:16:17.642"></status>
+<status status="PASS" starttime="20211014 20:10:53.828" endtime="20211014 20:10:53.993"></status>
 </kw>
-<status status="PASS" starttime="20211014 19:16:16.504" endtime="20211014 19:16:17.643"></status>
+<status status="PASS" starttime="20211014 20:10:52.943" endtime="20211014 20:10:53.994"></status>
 </kw>
 <kw name="Submeter">
 <kw name="Click" library="Browser">
@@ -121,21 +121,21 @@ Returns a stable identifier for the created page.</doc>
 <arguments>
 <arg>${submit}</arg>
 </arguments>
-<status status="PASS" starttime="20211014 19:16:17.647" endtime="20211014 19:16:18.305"></status>
+<status status="PASS" starttime="20211014 20:10:53.998" endtime="20211014 20:10:54.656"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20211014 19:16:20.309" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211014 19:16:18.306" endtime="20211014 19:16:20.309"></status>
+<msg timestamp="20211014 20:10:56.659" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211014 20:10:54.657" endtime="20211014 20:10:56.660"></status>
 </kw>
-<status status="PASS" starttime="20211014 19:16:17.644" endtime="20211014 19:16:20.310"></status>
+<status status="PASS" starttime="20211014 20:10:53.995" endtime="20211014 20:10:56.661"></status>
 </kw>
-<status status="PASS" starttime="20211014 19:16:09.061" endtime="20211014 19:16:20.311" critical="yes"></status>
+<status status="PASS" starttime="20211014 20:10:48.691" endtime="20211014 20:10:56.662" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20211014 19:16:01.464" endtime="20211014 19:16:20.952"></status>
+<status status="PASS" starttime="20211014 20:10:41.122" endtime="20211014 20:10:57.213"></status>
 </suite>
 <statistics>
 <total>

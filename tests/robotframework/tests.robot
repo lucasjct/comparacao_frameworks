@@ -20,7 +20,7 @@ Cenário - Preencher Formulário
 
 *** Keywords ***
 Acessar Formulario
-    New Browser         chromium    headless=False
+    New Browser         chromium    headless=True
     New Page            http://127.0.0.1:5000/     
 
 Preencher Campos
