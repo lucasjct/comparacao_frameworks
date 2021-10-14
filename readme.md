@@ -13,6 +13,10 @@
 
 ### ROBOT FRAMEWORK
 
+Tempo aproximado de execução: 11.5s   
+Navegador: Chrome  
+
+
 ```PYTHON
 *** Settings ***
 Library         Browser
@@ -50,10 +54,13 @@ Preencher Campos
 
 Submeter
     CLick               ${submit}
-    Sleep               2s
+
 ```   
 
-### PYTHON   
+### PYTHON COM SELENIUM    
+
+Tempo aproximado de execução em localhost: 9.40s   
+Navegador: Chrome  
 
 ```PYTHON
 from selenium import webdriver
@@ -105,6 +112,9 @@ formulario.encerrar_sessao()
 
 ```
 
+
+Tempo aproximado de execução em localhost: 9.40s   
+Navegador: Chrome  
 ### CYPRESS
 ```javascript
 

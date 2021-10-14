@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.10 on linux)" generated="20211014 19:16:01.459" rpa="false">
+<suite id="s1" name="Tests" source="/home/lucajct/workspace/comparacao_frameworks/tests/robotframework/tests.robot">
+<test id="s1-t1" name="Cenário - Preencher Formulário">
+<kw name="Acessar Formulario">
+<kw name="New Browser" library="Browser">
+<tags>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<arguments>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+</arguments>
+<msg timestamp="20211014 19:16:09.130" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
+<msg timestamp="20211014 19:16:11.402" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
+<status status="PASS" starttime="20211014 19:16:09.127" endtime="20211014 19:16:11.406"></status>
+</kw>
+<kw name="New Page" library="Browser">
+<tags>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<arguments>
+<arg>http://127.0.0.1:5000/</arg>
+</arguments>
+<msg timestamp="20211014 19:16:16.499" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5000/</msg>
+<status status="PASS" starttime="20211014 19:16:11.408" endtime="20211014 19:16:16.501"></status>
+</kw>
+<status status="PASS" starttime="20211014 19:16:09.124" endtime="20211014 19:16:16.503"></status>
+</kw>
+<kw name="Preencher Campos">
+<kw name="Fill Text" library="Browser">
+<tags>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<arguments>
+<arg>${nome}</arg>
+<arg>${dados.nome}</arg>
+</arguments>
+<msg timestamp="20211014 19:16:16.511" level="INFO">Fills the text 'Lucas' in the given field.</msg>
+<status status="PASS" starttime="20211014 19:16:16.507" endtime="20211014 19:16:16.834"></status>
+</kw>
+<kw name="Fill Text" library="Browser">
+<tags>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<arguments>
+<arg>${sobrenome}</arg>
+<arg>${dados.sobrenome}</arg>
+</arguments>
+<msg timestamp="20211014 19:16:16.838" level="INFO">Fills the text 'Texeira' in the given field.</msg>
+<status status="PASS" starttime="20211014 19:16:16.835" endtime="20211014 19:16:16.991"></status>
+</kw>
+<kw name="Fill Text" library="Browser">
+<tags>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${dados.email}</arg>
+</arguments>
+<msg timestamp="20211014 19:16:16.995" level="INFO">Fills the text 'teste@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20211014 19:16:16.992" endtime="20211014 19:16:17.143"></status>
+</kw>
+<kw name="Fill Text" library="Browser">
+<tags>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<arguments>
+<arg>${resumo}</arg>
+<arg>${dados.resumo}</arg>
+</arguments>
+<msg timestamp="20211014 19:16:17.147" level="INFO">Fills the text 'Automacao com RobotFramework' in the given field.</msg>
+<status status="PASS" starttime="20211014 19:16:17.144" endtime="20211014 19:16:17.277"></status>
+</kw>
+<kw name="Click" library="Browser">
+<tags>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<arguments>
+<arg>${select_pesquisa}</arg>
+</arguments>
+<status status="PASS" starttime="20211014 19:16:17.278" endtime="20211014 19:16:17.475"></status>
+</kw>
+<kw name="Click" library="Browser">
+<tags>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<arguments>
+<arg>${select_option}</arg>
+</arguments>
+<status status="PASS" starttime="20211014 19:16:17.476" endtime="20211014 19:16:17.642"></status>
+</kw>
+<status status="PASS" starttime="20211014 19:16:16.504" endtime="20211014 19:16:17.643"></status>
+</kw>
+<kw name="Submeter">
+<kw name="Click" library="Browser">
+<tags>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+</tags>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<arguments>
+<arg>${submit}</arg>
+</arguments>
+<status status="PASS" starttime="20211014 19:16:17.647" endtime="20211014 19:16:18.305"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20211014 19:16:20.309" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211014 19:16:18.306" endtime="20211014 19:16:20.309"></status>
+</kw>
+<status status="PASS" starttime="20211014 19:16:17.644" endtime="20211014 19:16:20.310"></status>
+</kw>
+<status status="PASS" starttime="20211014 19:16:09.061" endtime="20211014 19:16:20.311" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20211014 19:16:01.464" endtime="20211014 19:16:20.952"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

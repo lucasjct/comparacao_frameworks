@@ -13,7 +13,7 @@ describe('Simples exemplo de uso Cypress', () => {
         .should('contain.text', 'Formulário para Teste')
     })
 
-    it("Preenchendo os campos", () =>{
+    it("Preenchendo os campos", () => {
 
       cy.get('#nome').type("Lucas José")
       cy.get('#sobrenome').type('Carvalho Teixeira')

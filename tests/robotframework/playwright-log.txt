@@ -1,0 +1,10 @@
+{"level":30,"time":"2021-10-14T22:16:08.792Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Listening on 35837"}
+{"level":30,"time":"2021-10-14T22:16:11.553Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changed active context"}
+{"level":30,"time":"2021-10-14T22:16:13.158Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Video path: undefined"}
+{"level":30,"time":"2021-10-14T22:16:13.159Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changed active page"}
+{"level":30,"time":"2021-10-14T22:16:20.451Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changed active context"}
+{"level":30,"time":"2021-10-14T22:16:20.452Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-14T22:16:20.453Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changed active page"}
+{"level":30,"time":"2021-10-14T22:16:20.782Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changed active context"}
+{"level":30,"time":"2021-10-14T22:16:20.782Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-14T22:16:20.783Z","pid":45558,"hostname":"lucajct-Aspire-A315-54","msg":"Changed active page"}

@@ -17,9 +17,9 @@ class Locators():
         self.submeter = (By.ID,'submit')
         driver.get("http://127.0.0.1:5000/")
         
-class PreencherFormulario(Locators):
+class TestFormulario(Locators):
 
-    def preencher_campos(self, nome, sobrenome, email, genero, resumo):
+    def test_preencher_campos(self, nome, sobrenome, email, genero, resumo):
         
         driver.find_element(*self.nome).send_keys(nome)
         driver.find_element(*self.sobrenome).send_keys(sobrenome)
@@ -27,7 +27,7 @@ class PreencherFormulario(Locators):
         #Select(find_element(*self.genero).select_by_visible_text(genero))
         driver.find_element(*self.resumo).send_keys(resumo)
 
-    def marcar_campos_submeter(self):
+    def test_marcar_campos_submeter(self):
 
         driver.find_element(*self.pesquisa).click()
         driver.find_element(*self.selecionar_sim).click()
@@ -37,10 +37,10 @@ class PreencherFormulario(Locators):
         driver.quit()
 
 
-driver  = webdriver.Firefox()
-formulario = PreencherFormulario(driver)
+driver  = webdriver.Chrome()
+formulario = TestFormulario(driver)
 
-formulario.preencher_campos('Teste', 'Selenium', 'teste@selenium.com', 
-                            'selenium webdriver',"Testando aplicações com selenium")
-formulario.marcar_campos_submeter()
+formulario.test_preencher_campos('Teste', 'Selenium', 'teste@selenium.com', 
+                                'selenium webdriver',"Testando aplicações com selenium")
+formulario.test_marcar_campos_submeter()
 formulario.encerrar_sessao()
