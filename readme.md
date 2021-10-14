@@ -18,7 +18,7 @@
 Library         Browser
 
 *** Variables ***
-&{dados}                nome=Lucas  sobrenome=Texeira   email=teste@gmail.com   resumo=Automacao com RobotFramework
+&{dados}                nome=Lucas  sobrenome=Texeira  email=teste@gmail.com  resumo=Automacao com RobotFramework
 ${nome}                 id=nome
 ${sobrenome}            id=sobrenome
 ${email}                id=email
@@ -113,14 +113,12 @@ describe('Simples exemplo de uso Cypress', () => {
     it("Acessando o Formulário", () => {
 
       cy.visit('http://127.0.0.1:5000/')
-
       cy.title("Formulário Teste")
-
       cy.get('h2')
         .should('contain.text', 'Formulário para Teste')
     })
 
-    it("Preenchendo os campos", () =>{
+    it("Preenchendo os campos", () => {
 
       cy.get('#nome').type("Lucas José")
       cy.get('#sobrenome').type('Carvalho Teixeira')
