@@ -11,9 +11,9 @@
 
 ### ROBOT FRAMEWORK  
 
-Navegador: Chrome   
-Tempo aproximado de execução: 11.5s    
-Modo Headless: 8s    
+* Navegador: Chrome   
+* Tempo aproximado de execução: 11.5s    
+* Modo Headless: 8s    
 
 
 ```python
@@ -60,9 +60,9 @@ Submeter
 
 ### PYTHON COM SELENIUM     
 
-Navegador: Chrome   
-Tempo aproximado de execução em localhost: 9.40s     
-Modo Headless: 7s   
+* Navegador: Chrome   
+* Tempo aproximado de execução em localhost: 9.40s     
+* Modo Headless: 7s   
 
 ```python
 from selenium import webdriver
@@ -120,10 +120,10 @@ formulario.encerrar_sessao()
 
 ### CYPRESS   
 
-Navegador: Chrome    
-Tempo aproximado de execução em localhost: 17.4s*   
+* Navegador: Chrome    
+* Tempo aproximado de execução em localhost: 17.4s*   
 *OBS: ao reexecutar o teste com o dash do Cypress aberto, o tempo foi de aprox. 4s.    
-Modo Headless: 21s   
+* Modo Headless: 21s   
 
 ```javascript
 
