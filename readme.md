@@ -1,6 +1,9 @@
 ## __Comparação entre Robot Framework e Selenium com Python.__  
 
-<p>O objetivo é mostrar a diferença entre sintaxe e a utilização aplicada em determinados contextos.  O exemplo utilizado é o clássico preenchimento de fomrulário.</p>
+<p>O objetivo é mostrar a diferença entre sintaxe e o desempenho na execução de um mesmo teste.  O exemplo utilizado é o clássico preenchimento de fomrulário em localhost.</p>   
+<p>Existe uma diferença entre o tempo que decorre da execução do ambiente e o tempo do teste em si. O decorrer da execução é mais longo precisa abrir o browser, identificar a url e renderizar o conteúdo. A partir de então, temos o teste e seu tempo de fato. Nesta comparação, o Cypress teve o maior tempo de execução e o menor tempo prara rodar os testes. O Selenium com Python teve boa velocidade no tempo de execução e nos testes em si, seguido pelo RobotFramework</p>   
+
+
 
 
 
@@ -11,9 +14,9 @@
 
 ### ROBOT FRAMEWORK  
 
-Navegador: Chrome   
-Tempo aproximado de execução: 11.5s    
-Modo Headless: 8s    
+* Navegador: Chrome   
+* Tempo aproximado de execução: 11.5s    
+* Modo Headless: 8s    
 
 
 ```python
@@ -60,9 +63,9 @@ Submeter
 
 ### PYTHON COM SELENIUM     
 
-Navegador: Chrome   
-Tempo aproximado de execução em localhost: 9.40s     
-Modo Headless: 7s   
+* Navegador: Chrome   
+* Tempo aproximado de execução em localhost: 9.40s     
+* Modo Headless: 7s   
 
 ```python
 from selenium import webdriver
@@ -120,10 +123,10 @@ formulario.encerrar_sessao()
 
 ### CYPRESS   
 
-Navegador: Chrome    
-Tempo aproximado de execução em localhost: 17.4s*   
+* Navegador: Chrome    
+* Tempo aproximado de execução em localhost: 17.4s*   
 *OBS: ao reexecutar o teste com o dash do Cypress aberto, o tempo foi de aprox. 4s.    
-Modo Headless: 21s   
+* Modo Headless: 21s   
 
 ```javascript
 
