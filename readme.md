@@ -1,4 +1,4 @@
-## __Comparação entre Robot Framework e Selenium com Python.__  
+## __Comparação entre Robot Framework, Selenium com Python e Cypress.__  
 
 <p>O objetivo é mostrar a diferença entre sintaxe e o desempenho na execução de um mesmo teste.  O exemplo utilizado é o clássico preenchimento de fomrulário em localhost.</p>   
 <p>Existe uma diferença entre o tempo que decorre da execução do ambiente e o tempo do teste em si. O decorrer da execução é mais longo precisa abrir o browser, identificar a url e renderizar o conteúdo. A partir de então, temos o teste e seu tempo de fato. Nesta comparação, o Cypress teve o maior tempo de execução e o menor tempo prara rodar os testes. O Selenium com Python teve boa velocidade no tempo de execução e nos testes em si, seguido pelo RobotFramework</p>   
@@ -158,6 +158,5 @@ describe('Simples exemplo de uso Cypress', () => {
       cy.contains('Salvar').click()
   })
 })
-
 
 ```
